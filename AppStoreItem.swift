@@ -20,7 +20,7 @@ class AppStoreItem {
     }
     
     init?(itemType: AppStoreItem.ItemType, dictionary: [String:Any]){
-        if itemType == .song{
+        if itemType == .song {
             guard let name = dictionary["trackName"] as? String,
                 let description = dictionary["artistName"] as? String,
                 let imagePath = dictionary["artworkUrl100"] as? String else {return nil}
